@@ -1,8 +1,17 @@
 # IREP-AVC — AI Video Acceptance: Cutting the Luck Tax
 
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE) [![Python 3.10+ · stdlib only](https://img.shields.io/badge/python-3.10%2B%20%C2%B7%20stdlib%20only-3776AB.svg)](#reproduce) [![Measured 9.82x](https://img.shields.io/badge/measured-9.82%C3%97-brightgreen.svg)](#measured-results-200000-draw-monte-carlo-seed--20261016-re-runnable) [![Safety layer never trades away](https://img.shields.io/badge/safety%20layer-never%20trades%20away-critical.svg)](#the-discipline-non-negotiable)
+
 > **An AI-generated video — would you put it straight into an ad campaign?**
 
 Status: prototype v1.0.0 · License: MIT · Dependencies: Python standard library only · Every number below is re-runnable.
+
+**Three ways in — pick one, thirty seconds each**
+
+- **Here to cut a bill** → the number first: 9.82× fewer generations, 200,000-draw Monte Carlo, seed 20261016, re-runnable in about 30 seconds.
+- **Here to integrate** → `python video_acceptance_ci.py`; then adopt the one rule: no sampling-reduction claim ships without held-out calibration.
+- **Here to doubt it** → an uncalibrated verifier over-promised by +112%; read the arithmetic and the honest boundaries before trusting any multiple.
+
 
 ---
 

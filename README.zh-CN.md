@@ -1,8 +1,17 @@
 # IREP-AVC — AI 视频验收：砍掉「运气税」
 
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE) [![Python 3.10+ · stdlib only](https://img.shields.io/badge/python-3.10%2B%20%C2%B7%20stdlib%20only-3776AB.svg)](#reproduce) [![Measured 9.82x](https://img.shields.io/badge/measured-9.82%C3%97-brightgreen.svg)](#measured-results-200000-draw-monte-carlo-seed--20261016-re-runnable) [![Safety layer never trades away](https://img.shields.io/badge/safety%20layer-never%20trades%20away-critical.svg)](#the-discipline)
+
 > **AI 生成的视频，你敢直接投广告吗？**
 
 状态：原型 v1.0.0 · 许可：MIT · 依赖：仅 Python 标准库 · 本文所有数字均可复跑。
+
+**三条入口 — 挑一条，各三十秒**
+
+- **想省钱** → 先看数字：9.82× 减抽卡，20 万次抽样，种子 20261016，约 30 秒可复跑。
+- **想接入** → `python video_acceptance_ci.py`；然后采纳那条铁律：没有 held-out 标定，就不许报减抽卡倍数。
+- **想质疑** → 未标定的验证器把自己高估了 +112%；先看那道可手算的算术题和「诚实的边界」，再信任何倍数。
+
 
 ---
 
