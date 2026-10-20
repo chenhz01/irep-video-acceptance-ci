@@ -26,6 +26,8 @@ Because if you accept AI video by luck, you cannot know whether you are losing m
 **What should you do?**
 Run `python video_acceptance_ci.py` (fixed seed, ~30 seconds). Then apply its one rule to your own pipeline: **no sampling-reduction claim ships without held-out calibration.**
 
+> **Hard limit, before any number:** the L1 safety layer (deepfake / IP / prohibited content) never participates in sampling reduction — safety frames are always fully inspected. Weapons, malware and unauthorised surveillance are out of scope entirely. See [`## Safety binding`](#safety-binding).
+
 <!-- FGA4:axes -->
 **Four-axis alignment — the number is checked, not asserted**
 
@@ -40,7 +42,7 @@ A lone "9.82×" is meaningless: change the base rate and it moves. So every clai
 
 Full contract — 10,000+ Chinese characters, fourteen scenarios, six analogies, sourced references, and four failure modes: [`docs/FEYNMAN-4ALIGN.zh-CN.md`](docs/FEYNMAN-4ALIGN.zh-CN.md).
 
-English condensed edition (about 2,200 words) — the same four axes for the video domain, the same number ledger (9.84 hand / 9.82 simulation / 3.68 mediocre / +112% overstated), the same failure conditions, and the safety bindings placed before the numbers: [`docs/FEYNMAN-4ALIGN.en.md`](docs/FEYNMAN-4ALIGN.en.md). If the two editions ever disagree on a number, the Chinese edition is authoritative.
+English condensed edition (about 2,200 words) — the same four axes for the video domain, the same number ledger (9.84 hand / 9.82 simulation / 3.68 mediocre / +112% overstated), the same failure conditions, and the safety bindings stated as a hard limit with explicit dual-use exclusions: [`docs/FEYNMAN-4ALIGN.en.md`](docs/FEYNMAN-4ALIGN.en.md). If the two editions ever disagree on a number, the Chinese edition is authoritative.
 
 ```bash
 python feynman_align_check.py --repo .   # vendored copy of the parent repo's checker; fails closed
@@ -82,6 +84,7 @@ The mediocre row is the whole point: without held-out calibration you do not mer
 
 > **No held-out calibration ⇒ no reduction claim.** An uncalibrated reduction is luck wearing the costume of determinism.
 
+<a id="safety-binding"></a>
 ## Safety binding — G8 (read before using this in production)
 
 Video synthesis is dual-use. This repository's scope is **acceptance and provenance, never synthesis guidance**:

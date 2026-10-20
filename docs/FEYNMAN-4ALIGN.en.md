@@ -43,7 +43,7 @@ Not a formula. A formula can be copied without being understood; a mechanism sta
 
 ### 2.4 Direction — what this refuses to do
 
-Direction is the axis that costs the author something. It names the uses that are out of scope and the part of the pipeline that is never optimised. For this repository that part is the safety layer, and the refusal is written on the first screen rather than in an appendix, because a reader who only reads the first screen must still learn where not to plug it in.
+Direction is the axis that costs the author something. It names the uses that are out of scope and the part of the pipeline that is never optimised. For this repository that part is the safety layer, and the refusal is stated near the top of the README — above the measured results — rather than in an appendix, because a reader who stops at the first screen must still learn where not to plug it in.
 
 Miss one axis and the claim collapses in a predictable way: into an idea (no result), a magic trick (no mechanism), a legend (no code), or a panacea (no direction). A panacea is the same thing as useless.
 
