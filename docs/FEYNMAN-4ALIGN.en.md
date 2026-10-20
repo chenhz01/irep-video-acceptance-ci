@@ -218,7 +218,7 @@ One sentence: this repository answers "is this clip good enough", never "how do 
 | Result | metric, value, basis, command, boundary | 5 — all five present, hand-check published |
 | Mechanism | name, input, output, failure condition | 4 — the change-point signal's blind spots are named but not quantified |
 | Code | executed, deterministic, dependencies truthful | 5 — one command, stdlib only, fixed seed |
-| Direction | refusals and out-of-scope uses on the first screen | 5 — safety bindings stated before the numbers |
+| Direction | refusals and out-of-scope uses above the numbers in the README | 5 — safety bindings stated on the first screen, with a dual-use table |
 | **Total** | any axis ≤ 2 sets the total to 0 | **4.75** |
 
 The 4 on mechanism is the honest part; 4.75 is arithmetic.
