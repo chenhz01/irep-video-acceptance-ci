@@ -1,6 +1,6 @@
 # IREP-AVC — AI Video Acceptance: Cutting the Luck Tax
 
-[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE) [![Python 3.10+ · stdlib only](https://img.shields.io/badge/python-3.10%2B%20%C2%B7%20stdlib%20only-3776AB.svg)](#reproduce) [![Measured 9.82x](https://img.shields.io/badge/measured-9.82%C3%97-brightgreen.svg)](#measured-results-200000-draw-monte-carlo-seed--20261016-re-runnable) [![Safety layer never trades away](https://img.shields.io/badge/safety%20layer-never%20trades%20away-critical.svg)](#the-discipline-non-negotiable)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE) [![Python 3.10+ · stdlib only](https://img.shields.io/badge/python-3.10%2B%20%C2%B7%20stdlib%20only-3776AB.svg)](#reproduce) [![Measured 9.82x](https://img.shields.io/badge/measured-9.82%C3%97-brightgreen.svg)](#measured-results) [![Safety layer never trades away](https://img.shields.io/badge/safety%20layer-never%20trades%20away-critical.svg)](#the-discipline-non-negotiable)
 
 > **An AI-generated video — would you put it straight into an ad campaign?**
 
@@ -40,6 +40,8 @@ A lone "9.82×" is meaningless: change the base rate and it moves. So every clai
 
 Full contract — 10,000+ Chinese characters, fourteen scenarios, six analogies, sourced references, and four failure modes: [`docs/FEYNMAN-4ALIGN.zh-CN.md`](docs/FEYNMAN-4ALIGN.zh-CN.md).
 
+English condensed edition (about 2,200 words) — the same four axes for the video domain, the same number ledger (9.84 hand / 9.82 simulation / 3.68 mediocre / +112% overstated), the same failure conditions, and the safety bindings placed before the numbers: [`docs/FEYNMAN-4ALIGN.en.md`](docs/FEYNMAN-4ALIGN.en.md). If the two editions ever disagree on a number, the Chinese edition is authoritative.
+
 ```bash
 python feynman_align_check.py --repo .   # vendored copy of the parent repo's checker; fails closed
 ```
@@ -55,6 +57,7 @@ T2  review sampling — uniformly check N frames, hoping to hit the defect. Burn
 
 IREP's treatment: T1 uses a **held-out calibrated verifier**, turning the blind draw's true acceptance rate `q` into `PPV` (accepted ⇒ actually good). Expected generations drop from `1/q` to `1/PPV`. The reduction multiple is `PPV/q`. T2 uses **frame-to-frame invariants (change-point detection)**: a cheap 1-D signal scans the whole timeline almost for free; expensive re-checks zoom only near change points.
 
+<a id="measured-results"></a>
 ## Measured results (200,000-draw Monte Carlo, seed = 20261016, re-runnable)
 
 **T1 — generation draw** (hard prompt, base acceptance rate q = 8%):

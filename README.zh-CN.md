@@ -1,6 +1,6 @@
 # IREP-AVC — AI 视频验收：砍掉「运气税」
 
-[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE) [![Python 3.10+ · stdlib only](https://img.shields.io/badge/python-3.10%2B%20%C2%B7%20stdlib%20only-3776AB.svg)](#reproduce) [![Measured 9.82x](https://img.shields.io/badge/measured-9.82%C3%97-brightgreen.svg)](#measured-results-200000-draw-monte-carlo-seed--20261016-re-runnable) [![Safety layer never trades away](https://img.shields.io/badge/safety%20layer-never%20trades%20away-critical.svg)](#the-discipline)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE) [![Python 3.10+ · stdlib only](https://img.shields.io/badge/python-3.10%2B%20%C2%B7%20stdlib%20only-3776AB.svg)](#reproduce) [![Measured 9.82x](https://img.shields.io/badge/measured-9.82%C3%97-brightgreen.svg)](#measured-results) [![Safety layer never trades away](https://img.shields.io/badge/safety%20layer-never%20trades%20away-critical.svg)](#the-discipline)
 
 > **AI 生成的视频，你敢直接投广告吗？**
 
@@ -40,6 +40,8 @@
 
 完整契约——一万余字、十四个场景、六条联想、出处清单，以及四种失败模式： [`docs/FEYNMAN-4ALIGN.zh-CN.md`](docs/FEYNMAN-4ALIGN.zh-CN.md)。
 
+英文精华版（约 2,200 词）——视频域的四对齐、同一本数字台账（手算 9.84 / 模拟 9.82 / 平庸 3.68 / 高估 +112%）、同一组失效条件，且安全绑定写在数字之前： [`docs/FEYNMAN-4ALIGN.en.md`](docs/FEYNMAN-4ALIGN.en.md)。两版数字若有出入，以中文版为准。
+
 ```bash
 python feynman_align_check.py --repo .   # 主仓校验器的随仓副本；fail-closed
 ```
@@ -55,6 +57,7 @@ T2 验收抽帧  — 均匀抽 N 帧人工/重模型验。烧的是眼睛/算力
 
 IREP 处置：T1 用 **held-out 标定的 verifier**，把盲抽的「真接受率 q」提升为「PPV（被认可即真好）」，期望生成数从 `1/q` 降到 `1/PPV`，减抽卡倍数 = PPV/q。T2 用**帧间不变量（change-point 检测）**：廉价 1D 信号几乎免费全扫时间线，贵的重检只在突变处 zoom。
 
+<a id="measured-results"></a>
 ## 实测结果（20 万次蒙特卡洛，种子 20261016，可复跑）
 
 **T1 生成抽卡**（难 prompt，基础接受率 q = 8%）：
@@ -75,6 +78,7 @@ IREP 处置：T1 用 **held-out 标定的 verifier**，把盲抽的「真接受�
 
 **判据：** 低基率下 PPV 几乎完全由**特异性 Sp** 决定，而 Sp 只能靠 held-out 标定获得——所以标定步骤不是装饰，是承重墙。
 
+<a id="the-discipline"></a>
 ## 纪律（不可谈判）
 
 > **没有 held-out 标定，就没有减抽卡宣称。** 未标定的减抽卡 = 把运气伪装成确定性。
@@ -93,6 +97,7 @@ IREP 处置：T1 用 **held-out 标定的 verifier**，把盲抽的「真接受�
 - 仿真里 verifier 的 Se/Sp 是给定配置；真实流水线必须用你自己的 held-out 集标定——这正是本原型要教的纪律。
 - 这是原型：零框架依赖，无文件 I/O，成功退出码 0。
 
+<a id="reproduce"></a>
 ## 复跑
 
 ```bash
