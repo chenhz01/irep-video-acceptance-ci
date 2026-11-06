@@ -1,3 +1,4 @@
+<!-- SPDX-License-Identifier: CC-BY-4.0 -->
 # 费曼导读 · 四对齐机制（视频验收分仓版）v1.0
 
 > **English abstract** — Feynman Guide Four-Axis Alignment applied to AI-video acceptance. The four axes here are: *result* (a measured sampling-reduction multiple with a stated base rate, verifier Se/Sp, and seed), *mechanism* (PPV under low base rates — why specificity decides everything), *code* (one command, fixed seed 20261016, stdlib only, exit 0), *direction* (the safety layer never trades away, G8 out of scope). Fourteen production-adjacent examples, six analogies (AQL sampling, Wald's SPRT, Shewhart SPC, error-cost asymmetry, Goodhart, Lindy), and a sourced reference list. Numbers below are hand-checkable.

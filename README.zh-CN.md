@@ -1,10 +1,10 @@
 # IREP-AVC — AI 视频验收：砍掉「运气税」
 
-[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE) [![Python 3.10+ · stdlib only](https://img.shields.io/badge/python-3.10%2B%20%C2%B7%20stdlib%20only-3776AB.svg)](#reproduce) [![Measured 9.82x](https://img.shields.io/badge/measured-9.82%C3%97-brightgreen.svg)](#measured-results) [![Safety layer never trades away](https://img.shields.io/badge/safety%20layer-never%20trades%20away-critical.svg)](#the-discipline)
+[![代码: Apache-2.0](https://img.shields.io/badge/code-Apache--2.0-blue.svg)](LICENSE) [![规范: CC BY 4.0](https://img.shields.io/badge/spec%20%26%20docs-CC%20BY%204.0-lightgrey.svg)](LICENSE-SPEC) [![Python 3.10+ · stdlib only](https://img.shields.io/badge/python-3.10%2B%20%C2%B7%20stdlib%20only-3776AB.svg)](#reproduce) [![Measured 9.82x](https://img.shields.io/badge/measured-9.82%C3%97-brightgreen.svg)](#measured-results) [![Safety layer never trades away](https://img.shields.io/badge/safety%20layer-never%20trades%20away-critical.svg)](#the-discipline)
 
 > **AI 生成的视频，你敢直接投广告吗？**
 
-状态：原型 v1.0.0 · 许可：MIT · 依赖：仅 Python 标准库 · 本文所有数字均可复跑。
+状态：原型 v1.0.0 · 许可：代码 Apache-2.0 / 规范 CC BY 4.0 · MIT 不提供 · 依赖：仅 Python 标准库 · 本文所有数字均可复跑。
 
 **三条入口 — 挑一条，各三十秒**
 
@@ -143,6 +143,6 @@ python video_acceptance_ci.py     # 仅标准库，约 30 秒，种子 20261016
 
 ## 出身
 
-IREP 协议「视频验收」方向的原型——母仓：[`chenhz01/irep`](https://github.com/chenhz01/irep)。同许可（MIT），同合作条款。
+IREP 协议「视频验收」方向的原型——母仓：[`chenhz01/irep`](https://github.com/chenhz01/irep)。代码 Apache-2.0、规范 CC BY 4.0——与主仓同一双许可。每个文件的 SPDX 标签为准，MIT 不在此提供。
 
 联系：`hcac4735@agent.qq.com`（主，50 封/天）· `shanlun2029@outlook.com`（海外备选）。回应时限：48 小时。

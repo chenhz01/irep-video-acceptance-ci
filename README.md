@@ -1,10 +1,10 @@
 # IREP-AVC — AI Video Acceptance: Cutting the Luck Tax
 
-[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE) [![Python 3.10+ · stdlib only](https://img.shields.io/badge/python-3.10%2B%20%C2%B7%20stdlib%20only-3776AB.svg)](#reproduce) [![Measured 9.82x](https://img.shields.io/badge/measured-9.82%C3%97-brightgreen.svg)](#measured-results) [![Safety layer never trades away](https://img.shields.io/badge/safety%20layer-never%20trades%20away-critical.svg)](#the-discipline-non-negotiable)
+[![Code: Apache-2.0](https://img.shields.io/badge/code-Apache--2.0-blue.svg)](LICENSE) [![Spec: CC BY 4.0](https://img.shields.io/badge/spec%20%26%20docs-CC%20BY%204.0-lightgrey.svg)](LICENSE-SPEC) [![Python 3.10+ · stdlib only](https://img.shields.io/badge/python-3.10%2B%20%C2%B7%20stdlib%20only-3776AB.svg)](#reproduce) [![Measured 9.82x](https://img.shields.io/badge/measured-9.82%C3%97-brightgreen.svg)](#measured-results) [![Safety layer never trades away](https://img.shields.io/badge/safety%20layer-never%20trades%20away-critical.svg)](#the-discipline-non-negotiable)
 
 > **An AI-generated video — would you put it straight into an ad campaign?**
 
-Status: prototype v1.0.0 · License: MIT · Dependencies: Python standard library only · Every number below is re-runnable.
+Status: prototype v1.0.0 · License: Apache-2.0 (code) / CC BY 4.0 (spec & docs) · MIT is not offered · Dependencies: Python standard library only · Every number below is re-runnable.
 
 **Three ways in — pick one, thirty seconds each**
 
@@ -141,6 +141,6 @@ This repo is the money side. The protocol side lives one click away, and neither
 
 ## Lineage
 
-Prototype of the video-acceptance direction of the IREP protocol — parent repository: [`chenhz01/irep`](https://github.com/chenhz01/irep). Same license (MIT), same collaboration terms.
+Prototype of the video-acceptance direction of the IREP protocol — parent repository: [`chenhz01/irep`](https://github.com/chenhz01/irep). Code Apache-2.0, documentation CC BY 4.0 — the same dual licence as the parent protocol. The SPDX tag on each file wins. MIT is not offered here.
 
 Contact: `hcac4735@agent.qq.com` (primary; 50 messages/day cap) · `shanlun2029@outlook.com` (overseas alternative). Response target: 48 hours.

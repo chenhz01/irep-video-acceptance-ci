@@ -1,3 +1,4 @@
+<!-- SPDX-License-Identifier: CC-BY-4.0 -->
 # Four-Axis Alignment for AI Video Acceptance (English Condensed Edition)
 
 > Condensed from the Chinese contract (`FEYNMAN-4ALIGN.zh-CN.md`, 10,000+ characters). Definitions, scorecard and failure conditions are kept intact; the fourteen worked scenarios are cut to three. Every number below is re-runnable from this repository in about thirty seconds.

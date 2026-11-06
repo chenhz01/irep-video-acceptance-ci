@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+# SPDX-License-Identifier: Apache-2.0
 """
 IREP-AVC: AI 视频验收 CI 减抽卡原型
 费曼导读（60 秒）：
